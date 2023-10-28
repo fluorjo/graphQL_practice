@@ -1,0 +1,1 @@
+- 4-0. package.json에서 type을 module로 해줘야 import 를 할 수 있다. 아니면 함수 쓰고 require를 써줘야 한다. 
