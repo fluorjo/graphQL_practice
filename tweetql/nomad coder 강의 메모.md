@@ -7,6 +7,11 @@
   
   - eof = end of file 
   
-  - type query 작성은 필수. 
+  - "type Query" 작성은 필수. 
   이 안에 있어야 사용자가 request할 수 있다.
   get url을 만드는 것과 비슷.
+  이름 꼭 저대로 해줘야 함.
+
+  - 4-2.
+    -  
+    - scalar type은 graphql에 내장돼 있는, 기본적으로 제공되는 것. 
