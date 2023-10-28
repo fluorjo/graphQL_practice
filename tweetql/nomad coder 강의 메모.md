@@ -9,9 +9,12 @@
   
   - "type Query" 작성은 필수. 
   이 안에 있어야 사용자가 request할 수 있다.
-  get url을 만드는 것과 비슷.
-  이름 꼭 저대로 해줘야 함.
+  - query란 get request를 만드는 거라 할 수 있음.
+  - 이름 꼭 저것 대로 해줘야 함.
 
   - 4-2.
-    -  
     - scalar type은 graphql에 내장돼 있는, 기본적으로 제공되는 것. 
+    - mutation type에는 유저가 보낸 데이터로 변화시키는 동작들을 모두 넣는다. 
+    - postTweet(text:String):Tweet
+    <- 유저가 텍스트와 userid 를 보내면 새로운 Tweet를 유저한테 준다. 
+    - opertaion에 아무 것도 안 적으면 기본적으로 query.
