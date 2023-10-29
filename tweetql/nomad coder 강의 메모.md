@@ -18,3 +18,5 @@
     - postTweet(text:String):Tweet
     <- 유저가 텍스트와 userid 를 보내면 새로운 Tweet를 유저한테 준다. 
     - opertaion에 아무 것도 안 적으면 기본적으로 query.
+- 4-4
+  - 느낌표를 붙이면 non-nullable field.
