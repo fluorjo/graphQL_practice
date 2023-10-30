@@ -4,10 +4,12 @@ let tweets = [
   {
     id: "1",
     text: "hello 1",
+    userId: "1",
   },
   {
     id: "2",
     text: "hello 2",
+    userId: "2",
   },
 ];
 
@@ -30,7 +32,6 @@ const typeDefs = gql`
     firstName: String!
     lastName: String!
     fullName: String!
-
   }
   type Tweet {
     id: ID!
@@ -78,11 +79,21 @@ const resolvers = {
       return true;
     },
   },
-  User:{
-    fullName({firstName, lastName}){
-      return `${firstName}${lastName}`
-    }
-  }
+  User: {
+    fullName({ firstName, lastName }) {
+      return `${firstName}${lastName}`;
+    },
+  },
+  Tweet: {
+    author({ userId }) {
+      const result = users.find((user) => user.id === userId);
+      if (!result) {
+        console.log("userID가 없습니다.");
+        return null;
+      }
+      return result;
+    },
+  },
 };
 
 const server = new ApolloServer({ typeDefs, resolvers });
