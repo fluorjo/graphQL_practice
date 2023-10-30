@@ -15,6 +15,7 @@ const typeDefs = gql`
   type Query {
     allTweets: [Tweet!]!
     tweet(id: ID!): Tweet
+    ping:String!
   }
   type Mutation {
     postTweet(text: String!, userId: ID!): Tweet!
@@ -28,6 +29,9 @@ const resolvers = {
       console.log("called");
       return null;
     },
+    ping(){
+      return "pong"
+    }
   },
 };
 
