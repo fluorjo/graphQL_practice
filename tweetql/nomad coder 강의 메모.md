@@ -25,3 +25,6 @@
   - GraphQL에서 Resolver는 쿼리의 각 필드에 대한 데이터를 제공하는 함수이다. Resolver는 GraphQL 서버에서 데이터를 가져오는 데 사용되며, 클라이언트가 요청한 필드의 값을 반환한다.
 
   즉 사용자가 필드를 청했을 때 실제로 호출되는 함수. 
+  - root는 항상 resolver function의 첫 번째 argument
+  
+  - 사용자가 arguments를 보낼 때 그것들은 resolver functions의 두 번째 argument가 된다. 
