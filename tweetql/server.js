@@ -18,11 +18,20 @@ const typeDefs = gql`
   }
   type Mutation {
     postTweet(text: String!, userId: ID!): Tweet!
-    deleteTweet(id:ID!):Boolean!
+    deleteTweet(id: ID!): Boolean!
   }
 `;
 
-const server = new ApolloServer({ typeDefs });
+const resolvers = {
+  Query: {
+    tweet() {
+      console.log("called");
+      return null;
+    },
+  },
+};
+
+const server = new ApolloServer({ typeDefs, resolvers });
 
 server.listen().then(({ url }) => {
   console.log(`Running on ${url}`);
