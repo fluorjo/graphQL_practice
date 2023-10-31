@@ -30,3 +30,5 @@
   - 사용자가 arguments를 보낼 때 그것들은 resolver functions의 두 번째 argument가 된다. 
 - 4-7
   - 배열에서 삭제 방법 : 필터로 삭제하고자 하는 것의 id만 제외하고 남는 것들로 새로 배열을 정리. 
+- 4-10.
+  - altair. graphql client
