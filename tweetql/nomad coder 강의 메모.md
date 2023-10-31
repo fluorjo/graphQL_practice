@@ -32,3 +32,5 @@
   - 배열에서 삭제 방법 : 필터로 삭제하고자 하는 것의 id만 제외하고 남는 것들로 새로 배열을 정리. 
 - 4-10.
   - altair. graphql client
+- 4-11.
+  - https://transform.tools/json-to-graphql
