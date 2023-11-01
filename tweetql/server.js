@@ -61,7 +61,7 @@ const typeDefs = gql`
     """
     deleteTweet(id: ID!): Boolean!
   }
-  type Movie {
+  type movie {
     id: Int!
     url: String!
     imdb_code: String!
