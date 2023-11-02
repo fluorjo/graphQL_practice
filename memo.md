@@ -7,3 +7,6 @@
   - usequery hook을 쓰면 declarative code를 쓸 수 있는 장점이 있다. 
   - 선언형 코드란 원하는 걸 설명하기 위한 코드만 적는 것.
   - <->imperative 명령형 코드란 모든 단계의 코드를 적는 것. 1-1에서 적은 것처럼.쿼리 요청 보내고 state에 저장하고...
+- 2-1.
+  - local only field = 아폴로의 캐시에서만 활동하는 필드. 
+  - 뒤에 @client를 붙여준다. 
