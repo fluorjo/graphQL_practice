@@ -5,6 +5,8 @@ const ALL_MOVIES = gql`
     allMovies {
       title
       id
+      small_cover_image
+
     }
   }
 `;
